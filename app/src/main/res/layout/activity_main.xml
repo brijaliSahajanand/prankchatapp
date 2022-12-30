@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryaccet"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_profile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/text_reguller"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Cute Girl"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_25ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/text_light"
+                android:includeFontPadding="false"
+                android:text="Active Now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/star" />
+
+            <TextView
+                android:id="@+id/txtPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/text_bold"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_bottom_dialog"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/chat_start_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:background="@drawable/title_view"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/start_chat_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:fontFamily="@font/text_reguller"
+                android:gravity="center"
+                android:text="Get The Job"
+                android:textColor="@color/colorPrimarydark"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/text_reguller"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="(Only for reading)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/optionview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rr_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:background="@drawable/chat_bg">
+
+                <TextView
+                    android:id="@+id/option_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:fontFamily="@font/text_reguller"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:text="Option1"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12ssp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/chat_bg">
+
+                <TextView
+                    android:id="@+id/option_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:fontFamily="@font/text_reguller"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="@dimen/_15sdp"
+                    android:text="Option2"
+
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/_12ssp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.ads.adsdemosp.AdsView.BannerAdsView
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+</LinearLayout>

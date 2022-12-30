@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/defult_scrn_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/second" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/text_bold"
+                    android:includeFontPadding="false"
+                    android:text="Scratch Card"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_20ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/text_bold"
+                    android:includeFontPadding="false"
+                    android:text=" and"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/text_bold"
+                android:includeFontPadding="false"
+                android:text="win star "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/text_reguller"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="You can scratch and earn daily\n you can earn star daily"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <com.ads.adsdemosp.AdsView.NativeAdsView
+                android:id="@+id/adid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/iv_nxt_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/gradiant_bg"
+                android:fontFamily="@font/text_bold"
+                android:paddingHorizontal="@dimen/_110sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <com.ads.adsdemosp.AdsView.BannerAdsView
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>

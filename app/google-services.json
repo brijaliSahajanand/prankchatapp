@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "288210359376",
+    "project_id": "prank-chat-app",
+    "storage_bucket": "prank-chat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:288210359376:android:fe63afd0d19cd98a64ad55",
+        "android_client_info": {
+          "package_name": "com.prank.chatstory.earncoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "288210359376-0717ss3e0gp95a6b3tl0inm5mkgk7an0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prank.chatstory.earncoin",
+            "certificate_hash": "e8967beca794be349e1b5d35987a33bf4dc4adc5"
+          }
+        },
+        {
+          "client_id": "288210359376-m6csvpqv61aluqqr53luht2tc7q9a4ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFAHv0ezwaOiB5qRXraj4y1wHH2LChmW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "288210359376-m6csvpqv61aluqqr53luht2tc7q9a4ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_yellow"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:paddingVertical="@dimen/_10sdp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_user" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/text_reguller"
+            android:text="Chat master"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_brightness_1_24"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/text_reguller"
+            android:gravity="center"
+            android:text="Online"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/toolbar_title"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="reward"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/txtPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
+            android:text="0.0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

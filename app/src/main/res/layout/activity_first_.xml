@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/defult_scrn_bg"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:src="@drawable/img_first_logo" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/text_bold"
+                    android:includeFontPadding="false"
+                    android:text="Welcome"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_20ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/text_bold"
+                    android:includeFontPadding="false"
+                    android:text=" to"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20ssp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/text_bold"
+                android:includeFontPadding="false"
+                android:text="prank chat master"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/text_reguller"
+                android:includeFontPadding="false"
+                android:text="To start press below"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_15ssp" />
+
+            <com.ads.adsdemosp.AdsView.NativeAdsView
+                android:id="@+id/adid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/iv_nxt_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/gradiant_bg"
+                android:fontFamily="@font/text_bold"
+                android:paddingHorizontal="@dimen/_110sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="Start"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.ads.adsdemosp.AdsView.BannerAdsView
+        android:id="@+id/bottomview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</LinearLayout>

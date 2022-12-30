@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlt_disconnect_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vpn_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/text_medium"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+
+        <com.ads.adsdemosp.AdsView.quiz_Header_AdsView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/text_medium"
+        android:gravity="center"
+        android:text="Are you want to connect with secure Network for Better Peformance!!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11ssp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#4A70FD"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical"
+                    android:minWidth="@dimen/_150sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_1sdp">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+
+                        android:id="@+id/iv_flag"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/vpn_place" />
+
+                    <TextView
+                        android:id="@+id/tv_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:fontFamily="@font/text_medium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Your Location "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/text_bold"
+                        android:includeFontPadding="false"
+                        android:text="Not Connected"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <com.tuyenmonkey.mkloader.MKLoader
+                        android:id="@+id/mkloaderReg"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:visibility="gone"
+                        app:mk_color="@color/white"
+                        app:mk_type="TwinFishesSpinner" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.ads.adsdemosp.AdsView.NativeAdsView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/lnr_connecter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bottom_bg" />
+
+        <ImageView
+            android:id="@+id/img_off_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_disconnect" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

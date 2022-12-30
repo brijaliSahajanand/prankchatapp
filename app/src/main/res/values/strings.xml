@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Prank Chat App</string>
+    <string name="emoji">You Wan 10 Coins 😋</string>
+    <string name="txtwarn">Please Turn Off <b> USB Debugging </b> and \n Enjoy App Continue.</string>
+    <string name="disconnected">Disconnected</string>
+
+    <string name="switch_off">Connected</string>
+    <string name="switch_on">Not Connected</string>
+
+</resources>

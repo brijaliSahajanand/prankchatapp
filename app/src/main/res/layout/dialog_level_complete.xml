@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    app:cardCornerRadius="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_350sdp"
+            android:layout_height="@dimen/_320sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/dialog_bg" />
+
+        <LinearLayout
+            android:id="@+id/lltextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_120sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/level_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:background="@color/light_pink"
+                android:fontFamily="@font/text_bold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_14sdp"
+                android:text="COMPLETED"
+                android:textColor="@color/colorPrimarydark"
+                android:textSize="@dimen/_20ssp" />
+
+
+            <TextView
+                android:id="@+id/level_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/text_reguller"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="You pranked Well Good "
+                android:textColor="@color/colorPrimarydark"
+                android:textSize="@dimen/_18ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/text_reguller"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="You won 10 star"
+                    android:textColor="@color/colorPrimarydark"
+                    android:textSize="@dimen/_18ssp" />
+
+                <ImageView
+                    android:id="@+id/imgstar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:src="@drawable/star" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lltextview"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

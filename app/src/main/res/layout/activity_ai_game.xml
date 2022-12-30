@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/text_reguller"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="Cute Girl"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:background="@drawable/bg_bottom_dialog"
+                android:backgroundTint="#FEFDFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/text_bold"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Let's Play Tic Tac Toe game "
+                    android:textColor="@color/colorPrimarydark"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/text_light"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:includeFontPadding="false"
+                    android:text="The Tic Tac Toe game is a game for two players, who take turns marking the spaces in a 3×3 grid. The player who succeeded in placing three respective marks in a horizontal, vertical, or diagonal row wins the game. "
+                    android:textColor="@color/colorPrimarydark"
+                    android:textSize="@dimen/_13ssp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:background="@drawable/bottom_round"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn1"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:theme="@style/Button.White" />
+
+                        <Button
+                            android:id="@+id/btn2"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginHorizontal="@dimen/_10sdp" />
+
+                        <Button
+                            android:id="@+id/btn3"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:theme="@style/Button.White" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn4"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp" />
+
+                        <Button
+                            android:id="@+id/btn5"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginHorizontal="@dimen/_10sdp" />
+
+                        <Button
+                            android:id="@+id/btn6"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btn7"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp" />
+
+                        <Button
+                            android:id="@+id/btn8"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_marginHorizontal="@dimen/_10sdp" />
+
+                        <Button
+                            android:id="@+id/btn9"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUWin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/light_pink_sq"
+                        android:fontFamily="@font/text_bold"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/_15sdp"
+                        android:text="User Win"
+                        android:textColor="@color/colorPrimarydark"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:id="@+id/btnPAgain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/light_pink_sq"
+                        android:fontFamily="@font/text_bold"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:paddingVertical="@dimen/_13sdp"
+                        android:text="Sorry you loss chance !!!\nGet coin now"
+                        android:textColor="@color/colorPrimarydark"
+                        android:textSize="@dimen/_15ssp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <com.ads.adsdemosp.AdsView.BannerAdsView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+
+</LinearLayout>
